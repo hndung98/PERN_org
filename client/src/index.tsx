@@ -10,12 +10,17 @@ import SignupPage from './pages/Signup';
 import ContactPage from './pages/Contact';
 import ErrorPage from './pages/Error';
 import EditContact from './pages/Contact/EditContact';
+import OCRPage from './pages/OCR';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
     errorElement: <ErrorPage/>
+  },
+  {
+    path: "/ocr",
+    element: <OCRPage />,
   },
   {
     path: "/login",
