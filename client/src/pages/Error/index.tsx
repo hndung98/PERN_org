@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../common/layouts/Layout";
 
 export default function ErrorPage() {
   return (
-    <div>ErrorPage</div>
-  )
+    <Layout>
+      <h2>404 not found</h2>
+    </Layout>
+  );
 }
