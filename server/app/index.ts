@@ -46,9 +46,9 @@ app.use(express.json());
 //     }
 // });
 
-app.use('/todos', todoRouter);
+app.use('/api/todos', todoRouter);
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("Welcome to my api app!");
 });
 
