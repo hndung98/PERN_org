@@ -7,6 +7,7 @@ const todoRouter = Router();
 todoRouter.get('/', Todo.getAllTodos);
 todoRouter.get('/:id', Todo.getTodo);
 todoRouter.post('/', Todo.postTodo);
+todoRouter.post('/save', Todo.postSave);
 todoRouter.put('/:id', Todo.putTodo);
 todoRouter.delete('/:id', Todo.deleteTodo);
 
