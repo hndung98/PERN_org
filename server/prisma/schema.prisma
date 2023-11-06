@@ -34,7 +34,6 @@ model Customer {
   deleted       Boolean             @default(false)
 }
 
-
 enum Role {
   ADMIN
   CUSTOMER

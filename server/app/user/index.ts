@@ -1,13 +1,10 @@
 
-// import { Router } from "express";
-// import Todo from './controller';
+import { Router } from "express";
+import UserController from "./controller";
 
-// const todoRouter = Router();
+const userRouter = Router();
 
-// todoRouter.get('/', Todo.getAllTodos);
-// todoRouter.get('/:id', Todo.getTodo);
-// todoRouter.post('/', Todo.postTodo);
-// todoRouter.put('/:id', Todo.putTodo);
-// todoRouter.delete('/:id', Todo.deleteTodo);
+userRouter.get('/', UserController.getUser);
+userRouter.post('/', UserController.createUser);
 
-// export default todoRouter;
+export default userRouter;
